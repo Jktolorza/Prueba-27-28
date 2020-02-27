@@ -1,6 +1,6 @@
 package cl.awakelab.prueba;
 
-public class Ejecutable {
+public class Ejecutable extends Electrodomestico{
 
 	public static void main(String[] args) {
 		
@@ -9,8 +9,16 @@ public class Ejecutable {
 		electrodomesticos[0] = new Electrodomestico();
 		electrodomesticos[1] = new Lavadora();
 		electrodomesticos[2] = new Television();
-		System.out.println(electrodomesticos[0].toString());
-		System.out.println(electrodomesticos[1].toString());
-		System.out.println(electrodomesticos[2].toString());
+		electrodomesticos[3] = new Electrodomestico();
+		electrodomesticos[4] = new Lavadora();
+		electrodomesticos[5] = new Television();
+		electrodomesticos[6] = new Electrodomestico();
+		electrodomesticos[7] = new Television();
+		electrodomesticos[8] = new Electrodomestico();
+		electrodomesticos[9] = new Electrodomestico();
+		
+		for (int i = 0; i < electrodomesticos.length; i++) {
+		}
+		
 	}
 }

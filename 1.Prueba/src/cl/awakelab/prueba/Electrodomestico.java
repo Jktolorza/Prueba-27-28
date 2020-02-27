@@ -145,8 +145,4 @@ public class Electrodomestico {
 		return "Electrodomestico [precioBase=" + precioBase + ", color=" + color + ", consumoEnergetico="
 				+ consumoEnergetico + ", peso=" + peso + "]";
 	}
-
-	
-	
-	
 }
