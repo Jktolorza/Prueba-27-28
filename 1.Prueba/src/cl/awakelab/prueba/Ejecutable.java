@@ -1,15 +1,25 @@
-package cl.aeaklab.pruebba;
+package cl.awakelab.prueba;
+/**
+ * Clase Main del programa.
+ * Manipula las clases generadas.
+ * @author Juan Carlos Tolorza
+ * @version 1.0.0
+ */
 public class Ejecutable extends Electrodomestico{
 
 	public static void main(String[] args) {
-		
-		Electrodomestico electrodomesticos[] = new Electrodomestico[10];
+		//Atributos de la clase
 		int totalElectrodomesticos = 0;
 		int totalLavadoras =0;
 		int totalTelevision = 0;
-
-		electrodomesticos[0] = new Electrodomestico(443,44,"Amarilo",'F');
-		electrodomesticos[1] = new Lavadora(80,3242,33,"Amarillo",'z');
+		//Metodos
+		
+		
+		Electrodomestico electrodomesticos[] = new Electrodomestico[10];
+		
+		
+		electrodomesticos[0] = new Electrodomestico(10000,50,"blanco",'A');
+		electrodomesticos[1] = new Lavadora();
 		electrodomesticos[2] = new Television();
 		electrodomesticos[3] = new Electrodomestico();
 		electrodomesticos[4] = new Lavadora();
@@ -26,7 +36,6 @@ public class Ejecutable extends Electrodomestico{
 						electrodomestico instanceof Electrodomestico != electrodomestico instanceof Lavadora) {
 					int precio = ((Electrodomestico) electrodomestico).precioFinal();
 					totalElectrodomesticos += precio;
-					totalTelevision += precio;
 					System.out.println(" "+electrodomestico);
 				}
 			}
