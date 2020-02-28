@@ -1,4 +1,4 @@
-package cl.awakelab.prueba;
+package cl.aeaklab.pruebba;
 import java.lang.Math;
 public class Television extends Electrodomestico {
 		
@@ -45,7 +45,7 @@ public class Television extends Electrodomestico {
 	
 	@Override
 	public String toString() {
-		return "Television [resolucion=" + resolucion + ", tdt=" + tdt + ", precioBase=" + precioBase + ", color="
-				+ color + ", consumoEnergetico=" + consumoEnergetico + ", peso=" + peso + "]";
+		return"Electrodomestico [Precio Base: " + precioBase + "]" + "[" + "Color: " + color +"]"+"["+ "Consumo Energetico: "
+				+ consumoEnergetico + "]" + "[" + "Peso: " + peso +"]" +"["+ "Pulgadas: "+ resolucion+"]"+ "["+ "TDT: "+ tdt +"]"+ "[" + "Precio Final: " + precioFinal() + "]"; 
 	}
 }

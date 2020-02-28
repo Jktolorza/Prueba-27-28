@@ -1,4 +1,6 @@
-package cl.awakelab.prueba;
+package cl.aeaklab.pruebba;
+
+import cl.aeaklab.pruebba.Electrodomestico;
 
 public class Lavadora extends Electrodomestico {
 	protected int carga;
@@ -12,7 +14,7 @@ public class Lavadora extends Electrodomestico {
 		super(precioBase, peso);
 		this.carga = CARGA_DEFECTO;
 	}
-	public Lavadora(int precioBase, int peso, String color, char consumoEnergetico, int carga) {
+	public Lavadora(int carga,int precioBase, int peso, String color, char consumoEnergetico) {
 		super(precioBase, peso, color, consumoEnergetico);
 		this.carga = carga;
 	}
@@ -32,8 +34,8 @@ public class Lavadora extends Electrodomestico {
 	
 	@Override
 	public String toString() {
-		return "Lavadora [precioBase=" + precioBase + ", color=" + color + ", consumoEnergetico="
-				+ consumoEnergetico + ", peso=" + peso + "carga=" + carga + "]";
+		return "Lavadora [Precio Base: " + precioBase + "]" + "[" + "Color: " + color +"]"+"["+ "Consumo Energetico: "
+				+ consumoEnergetico + "]" + "[" + "Peso: " + peso +"]" +"[" + "Carga: " +carga + "]"+"[" + "Precio Final: " + precioFinal() + "]";
 	}
 	
 	
