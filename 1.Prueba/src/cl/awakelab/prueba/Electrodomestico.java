@@ -42,7 +42,7 @@ public class Electrodomestico {
 	 * defecto
 	 * 
 	 * @param precioBase Precio del electrodomestico
-	 * @param peso   Peso del electrodomestico
+	 * @param peso       Peso del electrodomestico
 	 */
 	public Electrodomestico(int precioBase, int peso) {
 		this();
@@ -54,9 +54,9 @@ public class Electrodomestico {
 	 * Constructor que recive los valores de precio, peso, color y consumo
 	 * energetico por parte del usuario y genera un objeto de tipo Electrodomestico
 	 * 
-	 * @param precioBase Precio del electrodomestico
-	 * @param peso Peso del electrodomestico
-	 * @param color Color del  electrodomestico
+	 * @param precioBase        Precio del electrodomestico
+	 * @param peso              Peso del electrodomestico
+	 * @param color             Color del electrodomestico
 	 * @param consumoEnergetico Consumo energetico del electrodomestico
 	 */
 	public Electrodomestico(int precioBase, int peso, String color, char consumoEnergetico) {
@@ -139,8 +139,8 @@ public class Electrodomestico {
 	}
 
 	/**
-	 * Calcula el precio final del producto teniendo en cuenta los factores que pueden
-	 * alteran el valor del mismo
+	 * Calcula el precio final del producto teniendo en cuenta los factores que
+	 * pueden alteran el valor del mismo
 	 * 
 	 * @return precioFinal
 	 */
@@ -196,7 +196,7 @@ public class Electrodomestico {
 	 */
 	private void comprobarConsumo(char letra) {
 		char letraa = Character.toUpperCase(letra);
-		if (letra <= 70 && letra >= 65) {// Tabla ascci
+		if (letraa <= 70 && letraa >= 65) {// Tabla ascci
 			this.consumoEnergetico = letraa;// Valor dado
 		} else {
 			this.consumoEnergetico = CONSUMO_DEFECTO;
@@ -230,8 +230,8 @@ public class Electrodomestico {
 
 	@Override
 	public String toString() {
-		return "Electrodomestico [Precio Base: " + precioBase + "]" + "[" + "Color: " + color + "]" + "["
+		return "Electrodomestico [Precio Base: $" + precioBase + "]" + "[" + "Color: " + color + "]" + "["
 				+ "Consumo Energetico: " + consumoEnergetico + "]" + "[" + "Peso: " + peso + "]" + "["
-				+ "Precio Final: " + precioFinal() + "]";
+				+ "Precio Final: $" + precioFinal() + "]";
 	}
 }
